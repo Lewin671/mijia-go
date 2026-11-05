@@ -1,0 +1,9 @@
+/bin/
+/dist/
+/coverage.out
+*.test
+.DS_Store
+.env
+auth.json
+policy.json
+*.log

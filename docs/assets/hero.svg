@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<title id="title">mijia-go — Your home. One command away.</title><desc id="desc">A Go CLI and Agent Skill for Mi Home, with explicit access and JSON output. The terminal example is illustrative.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b25"/><stop offset="1" stop-color="#152e2d"/></linearGradient></defs>
+<rect width="1200" height="500" rx="24" fill="url(#bg)"/>
+<g fill="none" stroke="#68e3b7" stroke-width="4" stroke-linejoin="round"><path d="M78 106l25-22 25 22v31h-17v-21H95v21H78z"/><path d="M139 90q17 17 0 34m12-46q29 29 0 58" opacity=".5"/></g>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"><text x="185" y="128" font-size="46" font-weight="700" fill="#f4faf7">mijia-go</text><text x="76" y="213" font-size="49" font-weight="650" fill="#f4faf7">Your home.</text><text x="76" y="274" font-size="49" font-weight="650" fill="#68e3b7">One command away.</text><text x="78" y="321" font-size="20" fill="#b1c7c1">Mi Home · Go CLI · Agent Skill</text></g>
+<rect x="644" y="83" width="493" height="309" rx="14" fill="#0b141c" stroke="#304947"/>
+<g fill="#4e6866"><circle cx="668" cy="106" r="5"/><circle cx="686" cy="106" r="5"/><circle cx="704" cy="106" r="5"/></g>
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="16"><text x="668" y="158" fill="#68e3b7">$ mijia device get --id … --property on</text><text x="668" y="203" fill="#c8d7de">{</text><text x="690" y="232" fill="#c8d7de">"schema_version": "1",</text><text x="690" y="261" fill="#c8d7de">"ok": true,</text><text x="690" y="290" fill="#c8d7de">"data": { "value": true }</text><text x="668" y="319" fill="#c8d7de">}</text><text x="668" y="363" font-size="12" fill="#7e9798">Illustrative output · no real account data</text></g>
+<text x="78" y="433" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" fill="#8daea4">Explicit access. Inspectable code. JSON by default.</text>
+</svg>

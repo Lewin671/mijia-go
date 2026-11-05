@@ -1,0 +1,25 @@
+name: Compatibility report
+description: Help record a real account/device test honestly.
+body:
+  - type: markdown
+    attributes:
+      value: Report only what you actually tested. Do not post tokens, QR codes, device/account IDs, IP/MAC addresses, raw responses, or addresses.
+  - type: input
+    id: environment
+    attributes:
+      label: CLI version, OS/architecture, and account region
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Public product model identifier
+    validations:
+      required: true
+  - type: textarea
+    id: operations
+    attributes:
+      label: Tested operations and results
+      description: Sign-in, refresh, list, inspect, get, set, action, or scene. Distinguish accepted, read-back verified, and physically observed behavior.
+    validations:
+      required: true

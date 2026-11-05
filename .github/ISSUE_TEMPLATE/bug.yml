@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible CLI issue without sharing private data.
+body:
+  - type: markdown
+    attributes:
+      value: Never attach credentials, QR codes, raw cloud responses, account/device IDs, IP/MAC addresses, or home addresses. Use private vulnerability reporting for security issues.
+  - type: input
+    id: version
+    attributes:
+      label: CLI version and OS/architecture
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Command, expected result, and observed result
+      description: Replace all private identifiers with placeholders. Include the error code, not raw logs.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Public model identifier and account region, if relevant
+      description: Use the product model, never your device's unique ID.
