@@ -170,7 +170,7 @@ func (a app) execute(ctx context.Context, args []string) (any, error) {
 		return nil, fail("INVALID_ARGUMENT", "command required; run mijia help")
 	}
 	if args[0] == "version" && len(args) == 1 {
-		return map[string]string{"version": Version}, nil
+		return map[string]string{"version": versionString()}, nil
 	}
 	if args[0] == "schema" && len(args) == 1 {
 		return map[string]any{"schema_version": "1", "commands": Commands, "output": "JSON envelope: schema_version, ok, data | error{code,message}", "global_flags": []string{"--config-dir", "--timeout", "--human", "--json"}, "exit_codes": map[string]int{"success": 0, "error": 1, "invalid_argument": 2, "auth_required": 3, "policy_denied": 4, "cloud_error": 5, "canceled": 130}}, nil
@@ -181,7 +181,7 @@ func (a app) execute(ctx context.Context, args []string) (any, error) {
 		if err != nil {
 			return nil, err
 		}
-		return map[string]any{"version": Version, "config_dir": a.store.Dir, "credentials_readable": authErr == nil, "allowed_devices": len(p.Devices), "read_only": p.ReadOnly, "network_checked": false, "hosts": []string{cloud.AccountHost, cloud.APIHost, cloud.SpecHost}}, nil
+		return map[string]any{"version": versionString(), "config_dir": a.store.Dir, "credentials_readable": authErr == nil, "allowed_devices": len(p.Devices), "read_only": p.ReadOnly, "network_checked": false, "hosts": []string{cloud.AccountHost, cloud.APIHost, cloud.SpecHost}}, nil
 	}
 	if len(args) < 2 {
 		return nil, fail("INVALID_ARGUMENT", "subcommand required; run mijia help")
